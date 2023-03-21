@@ -38,6 +38,6 @@ app.get('/api/:dayTarget', (request, response)=>{
     //response.json(day)
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on port ${PORT}! go catch it!`)
 })
